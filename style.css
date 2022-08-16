@@ -1,0 +1,29 @@
+/* Univsersal Selectors */
+
+
+
+/* Class Selectors */
+
+.generate-btn {
+
+}
+
+.celeb-gen {
+    display: flex;
+    justify-content: right;
+    max-width: 20%;
+}
+
+.villain-gen {
+    display: flex;
+    justify-content: center;
+    max-width: 20%;
+}
+
+.flex-container {
+    display: flex;
+}
+
+h1 {
+    text-align: center;
+}
