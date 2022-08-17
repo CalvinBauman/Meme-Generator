@@ -26,7 +26,7 @@
 
 .generate-meme-btn {
     margin-left: 15%;
-    margin-right: 200px;
+    margin-right: 16%;
     margin-bottom: 100px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -38,7 +38,7 @@
 }
 
 .generate-cap-btn {
-    margin-left: 200px;
+    margin-left: 16%;
     margin-right: 15%;
     margin-bottom: 100px;
     padding-top: 10px;
@@ -52,25 +52,24 @@
 
 .meme-gen {
     margin-left: 30%;
-    margin-right: 150px;
-    margin-bottom: 200px;
-    width: 300px;
-    height: 400px;
+    margin-right: 10%;
+    margin-bottom: 150px;
+    width: 22vw;
+    height: 22vw;
     max-width: 30%;
     max-height: 5%;
     background-color: white;
     border: 3px solid;
     border-radius: 20px;
     border-color: black;
-    size: 1vw;
 }
 
 .caption-gen {
     margin-right: 30%;
-    margin-left: 150px;
-    margin-bottom: 200px;
-    width: 300px;
-    height: 400px;
+    margin-left: 10%;
+    margin-bottom: 150px;
+    width: 22vw;
+    height: 22vw;
     max-width: 30%;
     max-height: 5%;
     background-color: white;
@@ -80,7 +79,6 @@
 }
 
 .footer {
-    bottom: 0;
     position: absolute;
     width: 99%;
 }
