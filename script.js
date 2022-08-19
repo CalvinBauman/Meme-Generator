@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 const generateCaptionBtn = document.querySelector(".generate-cap-btn");
 const memeImage = document.querySelector(".caption-gen");
@@ -7,6 +8,16 @@ const generateMemeBtn = document.querySelector(".flex-container .generate-meme-b
 
 var randomNumber = 1
 
+=======
+const generateCaptionBtn = document.querySelector(".generate-cap-btn");
+const memeImage = document.querySelector(".caption-gen");
+//const celebTitle = document.querySelector(".celeb-generator .parent-title");
+const memeSpot = document.querySelector("#memeImage");
+const generateMemeBtn = document.querySelector(".flex-container .generate-meme-btn");
+
+var randomNumber = 1
+
+>>>>>>> 75bda083db9d447a9d25b23f6243ef20af943384
 const updateDetails = (title) => {
     memeImage.textContent = title;
     //celebTitle.innerHTML = title;

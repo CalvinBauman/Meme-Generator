@@ -18,7 +18,7 @@
     max-width: 100%;
     background-color: rgb(180, 180, 180);
     border: 3px solid;
-    border-radius: 20px;
+    /*border-radius: 20px;*/
     border-color: black;
     justify-content: center;
     text-align: center;
@@ -74,7 +74,7 @@
     max-height: 5%;
     background-color: white;
     border: 3px solid;
-    border-radius: 20px;
+    /*border-radius: 20px;*/
     border-color: black;
 }
 
