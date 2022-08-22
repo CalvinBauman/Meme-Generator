@@ -3,13 +3,16 @@ const memeImage = document.querySelector(".caption-gen");
 //const celebTitle = document.querySelector(".celeb-generator .parent-title");
 const memeSpot = document.querySelector("#memeImage");
 const generateMemeBtn = document.querySelector(".flex-container .generate-meme-btn");
-
+const storageInput = document.querySelector('.storage');
+let text = '';
+const button = document.querySelector('.button');
+const storedInput = localStorage.getItem('usernameInput');
 var randomNumber = 1
-
+// const baseUrl = 'http://127.0.0.1:3000/'
+const baseUrl = 'https://warm-sierra-55973.herokuapp.com/'
 const updateDetails = (title) => {
     memeImage.textContent = title;
     //celebTitle.innerHTML = title;
-
 }
 const updateDetailsTwo = (url, title) => {
     randomInt();
@@ -17,33 +20,42 @@ const updateDetailsTwo = (url, title) => {
     memeSpot.setAttribute("src", url);
     //celebTitleTwo.innerHTML = title;
     // put randomInt() line 15 to implement function from 38-40 /
-
 }
-
 const generateCaption = () => {
     console.log("hello")
-    fetch("https://api.quotable.io/random")
+    fetch(${baseUrl}quote)
     .then((response) => response.json())
     .then(data => {
-        updateDetails(data.content)
+        updateDetails(data.text)
     });
 }
 const generateMeme = () => {
     console.log(memeSpot);
-    fetch("https://api.imgflip.com/get_memes")
+    fetch(${baseUrl}image)
     .then((response) => response.json())
     .then(data => {
         console.log(data);
-       
-        updateDetailsTwo(data.data.memes[randomNumber].url, data.data.memes[randomNumber].name)
+	let fullUrl = baseUrl + data.url
+        updateDetailsTwo(fullUrl, data.name)
     });
 }
-
 const randomInt = () => {
     randomNumber = Math.floor(Math.random()* 101);
 }
-
+const refreshButton = document.querySelector('.refresh-button');
+const refreshPage = () => {
+  location.reload();
+}
+refreshButton.addEventListener('click', refreshPage)
+storageInput.addEventListener('input', letter => {
+    text = letter.target.value
+})
+const saveToLocalStorage = () => {
+    console.log(text)
+    //localStorage.setItem('usernameInput', text.textContent)
+    localStorage.usernameInput = text;
+}
+button.addEventListener("click", saveToLocalStorage);
 //line 38-40 allows random meme to be pulled from api instead of set number
-
 generateCaptionBtn.addEventListener("click", generateCaption);
 generateMemeBtn.addEventListener("click", generateMeme);
