@@ -15,7 +15,6 @@ The languages that were used for this project were:
 4. Web based API
 - Link to API: 
 - https://warm-sierra-55973.herokuapp.com
-- https://imgflip.com/api
 
 ## Screenshot
 
