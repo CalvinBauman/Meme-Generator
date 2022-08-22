@@ -17,6 +17,7 @@ The languages that were used for this project were:
 - https://warm-sierra-55973.herokuapp.com
 
 ## Screenshot
+![Screenshot](https://user-images.githubusercontent.com/108315965/185830539-77b879de-1dc1-4332-b681-826820f92966.png)
 
 ## Deployed Link
 https://calvinbauman.github.io/Meme-Generator/
