@@ -1,26 +1,42 @@
-/* Class Selectors */
-
 .background {
-    background-image: linear-gradient(to bottom right, black, white);
+    background-color: white;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-
 .header {
     margin-top: 20px;
     margin-right: 8%;
-    margin-left: 8%;
-    margin-bottom: 100px;
+    /*margin-left: 8%;
+    margin-bottom: 100px;*/
     max-width: 100%;
-    background-color: rgb(180, 180, 180);
+    /*background-color: rgb(180, 180, 180);
     border: 3px solid;
-    /*border-radius: 20px;*/
-    border-color: black;
-    justify-content: center;
-    text-align: center;
+    /*border-radius: 20px;
+    border-color: black;*/
+    /*justify-content: center; */
+    text-align: left;
+    padding-left: 30px;
+    font-size: 60px;
 }
-
-.generate-meme-btn {
+.avatars{
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    margin-left: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+hr.dashed {
+    border-top: 3px dashed #bbb;
+}
+.memeImg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    margin-right: 20px;
+}
+/*.generate-meme-btn {
     margin-left: 15%;
     margin-right: 16%;
     margin-bottom: 100px;
@@ -32,7 +48,6 @@
     font-size: 1.5vw;
     font: Helvetica, Arial, Sans-Serif;
 }
-
 .generate-cap-btn {
     margin-left: 16%;
     margin-right: 15%;
@@ -44,8 +59,7 @@
     width: 10%;
     font-size: 1.5vw;
     font: Helvetica, Arial, Sans-Serif;
-}
-
+} */
 .meme-gen {
     margin-left: 30%;
     margin-right: 10%;
@@ -55,11 +69,10 @@
     max-width: 30%;
     max-height: 5%;
     background-color: white;
-    border: 3px solid;
+    /*border: 3px solid;
     border-radius: 20px;
-    border-color: black;
+    border-color: black;*/
 }
-
 .caption-gen {
     margin-right: 30%;
     margin-left: 10%;
@@ -69,29 +82,31 @@
     max-width: 30%;
     max-height: 5%;
     background-color: white;
-    border: 3px solid;
-    /*border-radius: 20px;*/
-    border-color: black;
+    /*border: 3px solid;
+    border-radius: 20px;
+    border-color: black;*/
 }
-
 .footer {
     position: absolute;
     width: 99%;
 }
-
 .flex-container {
     justify-content: center;
     display: flex;
 }
-
-h1 {
-    font-size: 3vw;
-    color: white;
-    text-align: center;
+.container {
+    margin-left: 30px;
 }
-
+.storage {
+    border: 3px solid blue;
+}
+h1 {
+    font-size: 32px;
+    color: black;
+}
 h2 {
     font-size: 20px;
     font-weight: lighter;
-    text-align: center;
+    text-align: left;
+    padding-left: 30px;
 }
