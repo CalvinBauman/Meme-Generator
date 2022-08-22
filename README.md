@@ -19,6 +19,7 @@ The languages that were used for this project were:
 ## Screenshot
 
 ## Deployed Link
+https://calvinbauman.github.io/Meme-Generator/
 
 ### Creators
 - Margot Schwartz
